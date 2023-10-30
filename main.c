@@ -27,34 +27,46 @@ typedef struct info{
 }Info;
 
 int main(){
-    clock_t start, end;
-    // cria um vetor inteiro de um milhao de posicoes
-    start = clock();
-    Info *vetor = (Info*) malloc(sizeof(Info)*1000000);
-
-    end = clock();
-    registrar_tempo(start, end, "Relatorio.txt");
-
-    // preenche o vetor com valores aleatorios
-    start = clock();
-
-    for(int i = 0; i < 1000000; i++){
-        vetor[i].key = rand();
-        vetor[i].value = 100 + rand();
+    int vet[5];
+    int vet2[5];
+    srand(73);
+    for(int i = 0; i < 5; i++){
+        vet[i] = rand();
+        vet2[i] = rand();
+    }
+    for (int i = 0; i < 5; i++){
+        printf("%d - %d \n", vet[i], vet2[i]);
     }
 
-    end = clock();
-    registrar_tempo(start, end, "Relatorio.txt");
 
-    //printa o vetor
-    start = clock();
+    // clock_t start, end;
+    // // cria um vetor inteiro de um milhao de posicoes
+    // start = clock();
+    // Info *vetor = (Info*) malloc(sizeof(Info)*1000000);
 
-    for(int i = 0; i < 1000000; i++){
-        printf("%d - %.2f \n", vetor[i].key, vetor[i].value);
-    }
+    // end = clock();
+    // registrar_tempo(start, end, "Relatorio.txt");
 
-    end = clock();
-    registrar_tempo(start, end, "Relatorio.txt");
-    free(vetor);
+    // // preenche o vetor com valores aleatorios
+    // start = clock();
+
+    // for(int i = 0; i < 1000000; i++){
+    //     vetor[i].key = rand();
+    //     vetor[i].value = 100 + rand();
+    // }
+
+    // end = clock();
+    // registrar_tempo(start, end, "Relatorio.txt");
+
+    // //printa o vetor
+    // start = clock();
+
+    // for(int i = 0; i < 1000000; i++){
+    //     printf("%d - %.2f \n", vetor[i].key, vetor[i].value);
+    // }
+
+    // end = clock();
+    // registrar_tempo(start, end, "Relatorio.txt");
+    // free(vetor);
     return 0;
 }
