@@ -21,12 +21,40 @@ void registrar_tempo(clock_t start, clock_t end, char *nome_arquivo){
     fclose(ARQ);
 }
 
+typedef struct info{
+    int key;
+    float value;
+}Info;
 
 int main(){
     clock_t start, end;
+    // cria um vetor inteiro de um milhao de posicoes
     start = clock();
-    vet = malloc(sizeof(int) * 1000000);
+    Info *vetor = (Info*) malloc(sizeof(Info)*1000000);
+
     end = clock();
     registrar_tempo(start, end, "Relatorio.txt");
+
+    // preenche o vetor com valores aleatorios
+    start = clock();
+
+    for(int i = 0; i < 1000000; i++){
+        vetor[i].key = rand();
+        vetor[i].value = 100 + rand();
+    }
+
+    end = clock();
+    registrar_tempo(start, end, "Relatorio.txt");
+
+    //printa o vetor
+    start = clock();
+
+    for(int i = 0; i < 1000000; i++){
+        printf("%d - %.2f \n", vetor[i].key, vetor[i].value);
+    }
+
+    end = clock();
+    registrar_tempo(start, end, "Relatorio.txt");
+    free(vetor);
     return 0;
 }
