@@ -1,0 +1,47 @@
+Bubble Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: [1] - 387 [2] - 388 [3] - 383 
+	Tipo 2: [1] - 356 [2] - 375 [3] - 371 
+
+	Tamanho do vetor: 20000
+	Tipo 1: [1] - 1615 [2] - 1624 [3] - 1613 
+	Tipo 2: [1] - 1427 [2] - 1498 [3] - 1431 
+
+	Tamanho do vetor: 30000
+	Tipo 1: [1] - 3791 [2] - 3730 [3] - 3779 
+	Tipo 2: [1] - 3241 [2] - 3230 [3] - 3219 
+
+Tempo total Bubble: 32472
+Insertion Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: [1] - 74 [2] - 74 [3] - 74 
+	Tipo 2: [1] - 147 [2] - 147 [3] - 148 
+
+	Tamanho do vetor: 20000
+	Tipo 1: [1] - 304 [2] - 320 [3] - 295 
+	Tipo 2: [1] - 595 [2] - 593 [3] - 618 
+
+	Tamanho do vetor: 30000
+	Tipo 1: [1] - 670 [2] - 677 [3] - 689 
+	Tipo 2: [1] - 1353 [2] - 1363 [3] - 1348 
+
+Tempo total Insertion: 9500
+
+
+Shell Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: [1] - 1 [2] - 1 [3] - 1 
+	Tipo 2: [1] - 0 [2] - 1 [3] - 1 
+
+	Tamanho do vetor: 20000
+	Tipo 1: [1] - 3 [2] - 3 [3] - 4 
+	Tipo 2: [1] - 1 [2] - 1 [3] - 1 
+
+	Tamanho do vetor: 30000
+	Tipo 1: [1] - 6 [2] - 5 [3] - 6 
+	Tipo 2: [1] - 1 [2] - 2 [3] - 2 
+
+Tempo total Shell: 54
+
+
+Tempo total: 42026
