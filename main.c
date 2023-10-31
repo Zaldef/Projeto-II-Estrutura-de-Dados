@@ -2,71 +2,87 @@
 #include <stdio.h>
 #include <time.h>
 
-clock_t start(){
-    return clock();
-}
-
-clock_t end(){
-    return clock();
-}
-
-clock_t duration(clock_t start, clock_t end){
-    return end - start;
-}
-
-void registrar_tempo(clock_t start, clock_t end, char *nome_arquivo){
-    FILE *ARQ;
-    ARQ = fopen(nome_arquivo, "a");
-    fprintf(ARQ, "O programa durou: %d milisegundos \n", duration(start, end));
-    fclose(ARQ);
-}
 
 typedef struct info{
     int key;
     float value;
 }Info;
 
+
+Info* criar_vetor_tipo1(int tam, int seed){
+    Info *vetor = (Info*) malloc(sizeof(Info)*tam);
+    srand(seed);
+    for(int i = 0; i < tam; i++){
+        vetor[i].key = rand();
+        vetor[i].value = 100 + rand();
+    }
+    return vetor;
+}
+
+
+Info* criar_vetor_tipo2(int tam, int seed){
+    Info *vetor = (Info*) malloc(sizeof(Info)*tam);
+    srand(seed);
+    vetor[0].key = rand();
+    vetor[0].value = 100 + rand();
+    for(int i = 1; i < tam; i++){
+        vetor[i].key = (rand() % 10) + vetor[i-1].key;
+        vetor[i].value = 100 + rand();
+    }
+    return vetor;
+}
+
+void printar_vetor(Info *vetor, int tam){
+    for(int i = 0; i < tam; i++){
+        printf("key: %d, value: %f\n", vetor[i].key, vetor[i].value);
+    }
+}
+
+void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
+    clock_t start, end;
+    int k, j;
+    Info aux;
+
+    start = clock();
+    for(k = 1; k <= tam - 1; k++){
+        aux = vetor[k];
+        j = k - 1;
+        while (j >= 0 && aux.key > vetor[j].key) {
+            vetor[j+1] = vetor[j];
+            j--;
+        }
+        vetor[j+1] = aux;
+    }
+    end = clock();
+    fprintf(ARQ, "[%d] - %d ", i+1, (end - start));
+}
+
 int main(){
-    int vet[5];
-    int vet2[5];
-    srand(73);
-    for(int i = 0; i < 5; i++){
-        vet[i] = rand();
-        vet2[i] = rand();
+    int tam[5] = {100, 1000, 10000, 100000, 1000000};
+    int seeds[10] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
+    FILE *ARQ = fopen("Relatorio.txt", "w");
+
+
+
+
+
+    fprintf(ARQ, "Insertion Sort:");
+    for(int i = 0; i<5; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        for(int j = 0; j < 10; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            insertion_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+
+        fprintf(ARQ, "\n\tTipo 2: ");
+        for(int j = 0; j < 10; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            insertion_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        fprintf(ARQ, "\n");
     }
-    for (int i = 0; i < 5; i++){
-        printf("%d - %d \n", vet[i], vet2[i]);
-    }
-
-
-    // clock_t start, end;
-    // // cria um vetor inteiro de um milhao de posicoes
-    // start = clock();
-    // Info *vetor = (Info*) malloc(sizeof(Info)*1000000);
-
-    // end = clock();
-    // registrar_tempo(start, end, "Relatorio.txt");
-
-    // // preenche o vetor com valores aleatorios
-    // start = clock();
-
-    // for(int i = 0; i < 1000000; i++){
-    //     vetor[i].key = rand();
-    //     vetor[i].value = 100 + rand();
-    // }
-
-    // end = clock();
-    // registrar_tempo(start, end, "Relatorio.txt");
-
-    // //printa o vetor
-    // start = clock();
-
-    // for(int i = 0; i < 1000000; i++){
-    //     printf("%d - %.2f \n", vetor[i].key, vetor[i].value);
-    // }
-
-    // end = clock();
-    // registrar_tempo(start, end, "Relatorio.txt");
-    // free(vetor);
     return 0;
 }
