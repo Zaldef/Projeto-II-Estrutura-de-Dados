@@ -38,15 +38,6 @@ void printar_vetor(Info *vetor, int tam){
     }
 }
 
-// clock_t duration(clock_t start, clock_t end){
-//     return end - start;
-// }
-
-// void registrar_tempo(clock_t start, clock_t end, char *nome_arquivo){
-//     FILE *ARQ = fopen(nome_arquivo, "a");
-//     fprintf(ARQ, "%d milisegundos \n", duration(start, end));
-//     fclose(ARQ);
-// }
 void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
     clock_t start, end;
     int k, j;
@@ -56,7 +47,7 @@ void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
     for(k = 1; k <= tam - 1; k++){
         aux = vetor[k];
         j = k - 1;
-        while (j >= 0 && aux.key < vetor[j].key) {
+        while (j >= 0 && aux.key > vetor[j].key) {
             vetor[j+1] = vetor[j];
             j--;
         }
@@ -67,55 +58,11 @@ void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
 }
 
 int main(){
-    int tam[5] = {100, 200, 500, 1000, 2000};
+    int tam[5] = {100, 1000, 10000, 100000, 1000000};
     int seeds[10] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
     FILE *ARQ = fopen("Relatorio.txt", "w");
-    // for(int i = 0; i < 5; i++){
-    //     fprintf(ARQ, "Tamanho do vetor: %d\n", tam[i]);
-    //     fprintf(ARQ, "Bubble Sort:\n\tTipo 1:\n");
-    //     for(int j = 0; j < 10; j++){
-    //         Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-    //         bubble_sort(vetor, tam[i], j, ARQ);
-    //         free(vetor);
-    //     }
-    //     fprintf(ARQ, "\tTipo 2:\n");
-    //     for(int j = 0; j < 10; j++){
-    //         Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-    //         bubble_sort(vetor, tam[i], j, ARQ);
-    //         free(vetor);
-    //     }
-    //     fprintf(ARQ, "Selection Sort:\n\tTipo 1:\n");
-    //     for(int j = 0; j < 10; j++){
-    //         Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-    //         selection_sort(vetor, tam[i], j, ARQ);
-    //         free(vetor);
-    //     }
-    //     fprintf(ARQ, "\tTipo 2:\n");
-    //     for(int j = 0; j < 10; j++){
-    //         Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-    //         selection_sort(vetor, tam[i], j, ARQ);
-    //         free(vetor);
-    //     }
-    //     fprintf(ARQ, "Insertion Sort:\n\tTipo 1:\n");
-    //     for(int j = 0; j < 10; j++){
-    //         Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-    //         insertion_sort(vetor, tam[i], j, ARQ);
-    //         free(vetor);
-    //     }
-    //     fprintf(ARQ, "\tTipo 2:\n");
-    //     for(int j = 0; j < 10; j++){
-    //         Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-    //         insertion_sort(vetor, tam[i], j, ARQ);
-    //         free(vetor);
-    //     }
-    // }
-    // fprintf(ARQ, "Tamanho do vetor: 5000\n");
-    // fprintf(ARQ, "Bubble Sort:\n\tTipo 1:\n");
-    // for(int i = 0; i < 10; i++){
-    //     Info *vetor = criar_vetor_tipo1(tam, seeds[i]);
-    //     bubble_sort(vetor, tam, i, ARQ);
-    //     free(vetor);
-    // }
+
+
 
 
 
@@ -128,6 +75,7 @@ int main(){
             insertion_sort(vetor, tam[i], j, ARQ);
             free(vetor);
         }
+
         fprintf(ARQ, "\n\tTipo 2: ");
         for(int j = 0; j < 10; j++){
             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
