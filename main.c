@@ -79,6 +79,47 @@ void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
     fprintf(ARQ, "[%d] - %d ", i+1, (end - start));
 }
 
+void cocktail_sort(Info list[],int tam) {
+    int length,bottom,top, swapped,i,aux;
+    length=tam;
+    bottom = 0;
+    top = length - 1;
+    swapped = 0;
+    while(swapped == 0 && bottom < top)//Se não houver troca de posições ou o ponteiro que
+    {                                   //sobe ultrapassar o que desce, o vetor esta ordenado
+        swapped = 1;
+        //Este for é a “ida” para a direita
+        for(i = bottom; i < top; i = i + 1)
+        {
+            if(list[i].key > list[i + 1].key)   //indo pra direita:testa se o próximo é maior
+            {   //indo pra direita:se o proximo é maior que o atual,
+                //troca as posições
+                aux=list[i].key;
+                list[i].key=list[i+1].key;
+                list[i+1].key=aux;
+                swapped = 0;
+            }
+        }//fecha for
+        // diminui o  `top` porque o elemento com o maior valor
+        // já está na direita (atual posição top)
+        top = top - 1;
+        //Este for é a “ida” para a esquerda
+        for(i = top; i > bottom; i = i - 1)
+        {  if(list[i].key < list[i - 1].key)
+            {
+                aux=list[i].key;
+                list[i].key=list[i-1].key;
+                list[i-1].key=aux;
+                swapped = 0;
+            }
+        }
+        //aumenta o `bottom` porque o menor valor já está
+        //na posição inicial (bottom)
+        bottom = bottom + 1;
+    }//fecha while
+ }// fim da funçao
+
+
 int main(){
     int tam[5] = {100, 1000, 10000, 100000, 1000000};
     int seeds[10] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
