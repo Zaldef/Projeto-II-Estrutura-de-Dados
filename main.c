@@ -5,7 +5,7 @@
 typedef struct info{
     int key;
     float value;
-}info;
+}Info;
 
 
 Info* criar_vetor_tipo1(int tam, int seed){
@@ -79,24 +79,27 @@ void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
     fprintf(ARQ, "[%d] - %d ", i+1, (end - start));
 }
 
-void cocktail_sort(Info list[],int tam) {
-    int length,bottom,top, swapped,i,aux;
-    length=tam;
-    bottom = 0;
-    top = length - 1;
-    swapped = 0;
+void cocktail_sort(Info *vetor, int tam, int i, FILE *ARQ) {
+
+     clock_t start, end;
+
+    start = clock();
+    int aux;
+    int bottom = 0;
+    int top = tam - 1;
+    int swapped = 0;
     while(swapped == 0 && bottom < top)//Se não houver troca de posições ou o ponteiro que
     {                                   //sobe ultrapassar o que desce, o vetor esta ordenado
         swapped = 1;
         //Este for é a “ida” para a direita
         for(i = bottom; i < top; i = i + 1)
         {
-            if(list[i].key > list[i + 1].key)   //indo pra direita:testa se o próximo é maior
+            if(vetor[i].key > vetor[i + 1].key)   //indo pra direita:testa se o próximo é maior
             {   //indo pra direita:se o proximo é maior que o atual,
                 //troca as posições
-                aux=list[i].key;
-                list[i].key=list[i+1].key;
-                list[i+1].key=aux;
+                aux=vetor[i].key;
+                vetor[i].key=vetor[i+1].key;
+                vetor[i+1].key=aux;
                 swapped = 0;
             }
         }//fecha for
@@ -105,11 +108,11 @@ void cocktail_sort(Info list[],int tam) {
         top = top - 1;
         //Este for é a “ida” para a esquerda
         for(i = top; i > bottom; i = i - 1)
-        {  if(list[i].key < list[i - 1].key)
+        {  if(vetor[i].key < vetor[i - 1].key)
             {
-                aux=list[i].key;
-                list[i].key=list[i-1].key;
-                list[i-1].key=aux;
+                aux=vetor[i].key;
+                vetor[i].key=vetor[i-1].key;
+                vetor[i-1].key=aux;
                 swapped = 0;
             }
         }
@@ -117,33 +120,36 @@ void cocktail_sort(Info list[],int tam) {
         //na posição inicial (bottom)
         bottom = bottom + 1;
     }//fecha while
+    end = clock();
+
+    fprintf(ARQ, "[%d] - %d ", i+1, (end - start));
  }// fim da funçao
 
 
 int main(){
-    int tam[5] = {100, 1000, 10000, 100000, 1000000};
+    int tam[5] = {1000, 1000, 1000, 1000, 1000};
     int seeds[10] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
     FILE *ARQ = fopen("Relatorio.txt", "w");
 
     fprintf(ARQ, "Bubble Sort:");
-    for(int i = 0; i<qntd_vetores; i++){
+    for(int i = 0; i<5; i++){
         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
         fprintf(ARQ, "\n\tTipo 1: ");
-        for(int j = 0; j < qntd_seeds; j++){
+        for(int j = 0; j < 10; j++){
             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
             bubble_sort(vetor, tam[i], j, ARQ);
             free(vetor);
         }
 
         fprintf(ARQ, "\n\tTipo 2: ");
-        for(int j = 0; j < qntd_seeds; j++){
+        for(int j = 0; j < 10; j++){
             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
             bubble_sort(vetor, tam[i], j, ARQ);
             free(vetor);
         }
         fprintf(ARQ, "\n");
     }
-  
+
     fprintf(ARQ, "Insertion Sort:");
     for(int i = 0; i<5; i++){
         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
@@ -162,5 +168,25 @@ int main(){
         }
         fprintf(ARQ, "\n");
     }
+
+    fprintf(ARQ, "Cocktail Sort:");
+    for(int i = 0; i<5; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        for(int j = 0; j < 10; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            cocktail_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+
+        fprintf(ARQ, "\n\tTipo 2: ");
+        for(int j = 0; j < 10; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            cocktail_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        fprintf(ARQ, "\n");
+    }
+    
     return 0;
 }
