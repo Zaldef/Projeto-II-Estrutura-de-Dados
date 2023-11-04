@@ -238,7 +238,7 @@ void quick_sort(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
 
 int main(){
     clock_t start, end, start_master, end_master;
-    int tam[qntd_tams] = {10000, 50000, 100000, 500000, 1000000};
+    int tam[qntd_tams] = {1000, 5000, 1000, 5000, 1000};
     int seeds[qntd_seeds] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
     FILE *ARQ = fopen("Relatorio.txt", "w");
     start_master = clock();
@@ -303,7 +303,7 @@ int main(){
     fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
   
 start = clock();
-    printf("Cocktail Sort:"); //TESTE
+    printf("\nCocktail Sort:"); //TESTE
 
     fprintf(ARQ, "Cocktail Sort:");
     for(int i = 0; i<qntd_tams; i++){
