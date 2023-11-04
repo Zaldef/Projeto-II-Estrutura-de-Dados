@@ -140,10 +140,14 @@ void shell_sort(Info *vetor, int tam, int i, FILE *ARQ){
             while (j >= 0 && aux.key > vetor[j].key) {
                 vetor[j+h] = vetor[j];
                 j = j - h;
-
             }
             vetor[j+h] = aux;
         }
+    }
+    end = clock();
+
+    fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", i+1, (end - start));
+}
 
        
         
