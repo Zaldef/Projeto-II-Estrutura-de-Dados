@@ -58,7 +58,7 @@ void bubble_sort(Info *vetor, int tam, int i, FILE *ARQ){
         }
     }
     end = clock();
-
+    printf("\n\tCaso %d - %d milisegundos ", i+1, (end - start)); // TESTE
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", i+1, (end - start));
 }
 
@@ -78,7 +78,7 @@ void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
         vetor[j+1] = aux;
     }
     end = clock();
-
+    printf("\n\tCaso %d - %d milisegundos ", i+1, (end - start)); // TESTE
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", i+1, (end - start));
 }
 
@@ -104,7 +104,7 @@ void shell_sort(Info *vetor, int tam, int i, FILE *ARQ){
         }
     }
     end = clock();
-
+    printf("\n\tCaso %d - %d milisegundos ", i+1, (end - start)); // TESTE
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", i+1, (end - start));
 }
 
@@ -128,7 +128,6 @@ int main(){
             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
             shell_sort(vetor, tam[i], j, ARQ);
             free(vetor);
-            printf("\n\t\tCaso %d - ok", j+1); //TESTE
         }
 
         fprintf(ARQ, "\n\n\tTipo 2: ");
@@ -136,39 +135,11 @@ int main(){
             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
             shell_sort(vetor, tam[i], j, ARQ);
             free(vetor);
-            printf("\n\t\tCaso %d - ok", j+11); //TESTE
         }
         fprintf(ARQ, "\n");
     }
     end = clock();
     fprintf(ARQ, "\nTempo total Shell: %d\n", (end - start));
-
-
-    start = clock();
-    printf("Insertion Sort:"); //TESTE
-    fprintf(ARQ, "Insertion Sort:");
-    for(int i = 0; i<qntd_tams; i++){
-        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-        fprintf(ARQ, "\n\tTipo 1: ");
-        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-        for(int j = 0; j < qntd_seeds; j++){
-            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-            insertion_sort(vetor, tam[i], j, ARQ);
-            free(vetor);
-            printf("\n\t\tCaso %d - ok", j+1); //TESTE
-        }
-
-        fprintf(ARQ, "\n\n\tTipo 2: ");
-        for(int j = 0; j < qntd_seeds; j++){
-            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-            insertion_sort(vetor, tam[i], j, ARQ);
-            free(vetor);
-            printf("\n\t\tCaso %d - ok", j+11); //TESTE
-        }
-        fprintf(ARQ, "\n");
-    }
-    end = clock();
-    fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
 
     start = clock();
     fprintf(ARQ, "Bubble Sort:");
@@ -181,7 +152,6 @@ int main(){
             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
             bubble_sort(vetor, tam[i], j, ARQ);
             free(vetor);
-            printf("\n\t\tCaso %d - ok", j+1); //TESTE
         }
 
         fprintf(ARQ, "\n\n\tTipo 2: ");
@@ -189,12 +159,35 @@ int main(){
             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
             bubble_sort(vetor, tam[i], j, ARQ);
             free(vetor);
-            printf("\n\t\tCaso %d - ok", j+11); //TESTE
         }
         fprintf(ARQ, "\n");
     }
     end = clock();
     fprintf(ARQ, "\nTempo total Bubble: %d\n", (end - start));
+
+    start = clock();
+    printf("Insertion Sort:"); //TESTE
+    fprintf(ARQ, "Insertion Sort:");
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            insertion_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            insertion_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        fprintf(ARQ, "\n");
+    }
+    end = clock();
+    fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
 
     end_master = clock();
     fprintf(ARQ, "\n\nTempo total: %d", (end_master - start_master));
