@@ -1,3 +1,4 @@
+
 Marge Sort:
 	Tamanho do vetor: 10000
 	Tipo 1: 
@@ -24,7 +25,7 @@ Marge Sort:
 	Caso 9 - -2119958619 milisegundos 
 	Caso 10 - -2119958616 milisegundos 
 
-	Tamanho do vetor: 50000
+	Tamanho do vetor: 5
 	Tipo 1: 
 	Caso 1 - 272631920 milisegundos 
 	Caso 2 - 272631928 milisegundos 
@@ -49,7 +50,8 @@ Marge Sort:
 	Caso 9 - -2119958481 milisegundos 
 	Caso 10 - -2119958477 milisegundos 
 
-	Tamanho do vetor: 100000
+
+	Tamanho do vetor: 1
 	Tipo 1: 
 	Caso 1 - 272632074 milisegundos 
 	Caso 2 - 272632090 milisegundos 
