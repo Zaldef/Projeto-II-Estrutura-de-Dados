@@ -17,7 +17,25 @@ Insertion Sort:
 	Tipo 2: 
 	Caso 1 - 0 milisegundos 
 
-Tempo total Insertion: 15
+Tempo total Insertion: 10
+Cocktail Sort:
+	Tamanho do vetor: 10
+	Tipo 1: 
+	Caso 4 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 5 - 0 milisegundos 
+
+Tempo total Cocktail 10
+Bubble Sort:
+	Tamanho do vetor: 10
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+
+Tempo total Insertion: 11
 
 
-Tempo total: 15
+Tempo total: 31
