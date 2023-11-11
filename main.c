@@ -46,7 +46,7 @@ void bubble_sort(Info *vetor, int tam, int i, FILE *ARQ) {
 
     start = clock();
     for (int i = 0; i < tam - 1; i++) {
-        for (int j = 1; j < tam - i ; j++) {
+        for (int j = 0; j < tam - i ; j++) {
             if (vetor[j].key < vetor[j + 1].key) {
                 int temp = vetor[j].key;
                 vetor[j].key = vetor[j + 1].key;
