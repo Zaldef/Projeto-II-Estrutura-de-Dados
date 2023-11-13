@@ -1,141 +1,1055 @@
 
+
+Shell Sort:
+	Tamanho do vetor: 10
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+Tempo total Shell: 212
+Insertion Sort:
+	Tamanho do vetor: 10
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+Tempo total Insertion: 9
+Cocktail Sort:
+	Tamanho do vetor: 10
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+Tempo total Cocktail 264
+Bubble Sort:
+	Tamanho do vetor: 10
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+Tempo total Insertion: 173
 Marge Sort:
-	Tamanho do vetor: 10000
+	Tamanho do vetor: 10
 	Tipo 1: 
-	Caso 1 - 272631875 milisegundos 
-	Caso 2 - 272631877 milisegundos 
-	Caso 3 - 272631879 milisegundos 
-	Caso 4 - 272631881 milisegundos 
-	Caso 5 - 272631883 milisegundos 
-	Caso 6 - 272631885 milisegundos 
-	Caso 7 - 272631887 milisegundos 
-	Caso 8 - 272631890 milisegundos 
-	Caso 9 - 272631892 milisegundos 
-	Caso 10 - 272631895 milisegundos 
+	Caso 1 - 1730152295 milisegundos 
+	Caso 2 - 1730152298 milisegundos 
+	Caso 3 - 1730152299 milisegundos 
+	Caso 4 - 1730152300 milisegundos 
+	Caso 5 - 1730152300 milisegundos 
+	Caso 6 - 1730152301 milisegundos 
+	Caso 7 - 1730152302 milisegundos 
+	Caso 8 - 1730152303 milisegundos 
+	Caso 9 - 1730152304 milisegundos 
+	Caso 10 - 1730152305 milisegundos 
 
 	Tipo 2: 
-	Caso 1 - -2119958632 milisegundos 
-	Caso 2 - -2119958630 milisegundos 
-	Caso 3 - -2119958629 milisegundos 
-	Caso 4 - -2119958628 milisegundos 
-	Caso 5 - -2119958627 milisegundos 
-	Caso 6 - -2119958625 milisegundos 
-	Caso 7 - -2119958623 milisegundos 
-	Caso 8 - -2119958621 milisegundos 
-	Caso 9 - -2119958619 milisegundos 
-	Caso 10 - -2119958616 milisegundos 
+	Caso 1 - 1032120258 milisegundos 
+	Caso 2 - 1032120258 milisegundos 
+	Caso 3 - 1032120259 milisegundos 
+	Caso 4 - 1032120260 milisegundos 
+	Caso 5 - 1032120261 milisegundos 
+	Caso 6 - 1032120263 milisegundos 
+	Caso 7 - 1032120263 milisegundos 
+	Caso 8 - 1032120265 milisegundos 
+	Caso 9 - 1032120266 milisegundos 
+	Caso 10 - 1032120267 milisegundos 
 
-	Tamanho do vetor: 5
+	Tamanho do vetor: 0
 	Tipo 1: 
-	Caso 1 - 272631920 milisegundos 
-	Caso 2 - 272631928 milisegundos 
-	Caso 3 - 272631936 milisegundos 
-	Caso 4 - 272631945 milisegundos 
-	Caso 5 - 272631952 milisegundos 
-	Caso 6 - 272631962 milisegundos 
-	Caso 7 - 272631970 milisegundos 
-	Caso 8 - 272631980 milisegundos 
-	Caso 9 - 272631989 milisegundos 
-	Caso 10 - 272631998 milisegundos 
+	Caso 1 - 1730152317 milisegundos 
+	Caso 2 - 1730152318 milisegundos 
+	Caso 3 - 1730152318 milisegundos 
+	Caso 4 - 1730152319 milisegundos 
+	Caso 5 - 1730152320 milisegundos 
+	Caso 6 - 1730152321 milisegundos 
+	Caso 7 - 1730152321 milisegundos 
+	Caso 8 - 1730152323 milisegundos 
+	Caso 9 - 1730152323 milisegundos 
+	Caso 10 - 1730152324 milisegundos 
 
 	Tipo 2: 
-	Caso 1 - -2119958525 milisegundos 
-	Caso 2 - -2119958521 milisegundos 
-	Caso 3 - -2119958512 milisegundos 
-	Caso 4 - -2119958507 milisegundos 
-	Caso 5 - -2119958502 milisegundos 
-	Caso 6 - -2119958496 milisegundos 
-	Caso 7 - -2119958492 milisegundos 
-	Caso 8 - -2119958487 milisegundos 
-	Caso 9 - -2119958481 milisegundos 
-	Caso 10 - -2119958477 milisegundos 
+	Caso 1 - 1032121590 milisegundos 
+	Caso 2 - 1032121623 milisegundos 
+	Caso 3 - 1032121512 milisegundos 
+	Caso 4 - 1032121546 milisegundos 
+	Caso 5 - 1032121707 milisegundos 
+	Caso 6 - 1032121724 milisegundos 
+	Caso 7 - 1032121725 milisegundos 
+	Caso 8 - 1032121566 milisegundos 
+	Caso 9 - 1032121630 milisegundos 
+	Caso 10 - 1032121456 milisegundos 
 
-
-	Tamanho do vetor: 1
+	Tamanho do vetor: 0
 	Tipo 1: 
-	Caso 1 - 272632074 milisegundos 
-	Caso 2 - 272632090 milisegundos 
-	Caso 3 - 272632106 milisegundos 
-	Caso 4 - 272632122 milisegundos 
-	Caso 5 - 272632138 milisegundos 
-	Caso 6 - 272632156 milisegundos 
-	Caso 7 - 272632172 milisegundos 
-	Caso 8 - 272632189 milisegundos 
-	Caso 9 - 272632205 milisegundos 
-	Caso 10 - 272632224 milisegundos 
+	Caso 1 - 1730152338 milisegundos 
+	Caso 2 - 1730152339 milisegundos 
+	Caso 3 - 1730152340 milisegundos 
+	Caso 4 - 1730152340 milisegundos 
+	Caso 5 - 1730152341 milisegundos 
+	Caso 6 - 1730152343 milisegundos 
+	Caso 7 - 1730152344 milisegundos 
+	Caso 8 - 1730152346 milisegundos 
+	Caso 9 - 1730152347 milisegundos 
+	Caso 10 - 1730152348 milisegundos 
 
 	Tipo 2: 
-	Caso 1 - -2121006871 milisegundos 
-	Caso 2 - -2121006862 milisegundos 
-	Caso 3 - -2121006852 milisegundos 
-	Caso 4 - -2121006843 milisegundos 
-	Caso 5 - -2121006835 milisegundos 
-	Caso 6 - -2121006823 milisegundos 
-	Caso 7 - -2121006815 milisegundos 
-	Caso 8 - -2121006805 milisegundos 
-	Caso 9 - -2121006794 milisegundos 
-	Caso 10 - -2121006785 milisegundos 
+	Caso 1 - 1032121469 milisegundos 
+	Caso 2 - 1032121550 milisegundos 
+	Caso 3 - 1032121678 milisegundos 
+	Caso 4 - 1032121647 milisegundos 
+	Caso 5 - 1032121552 milisegundos 
+	Caso 6 - 1032121665 milisegundos 
+	Caso 7 - 1032121777 milisegundos 
+	Caso 8 - 1032121458 milisegundos 
+	Caso 9 - 1032121379 milisegundos 
+	Caso 10 - 1032121764 milisegundos 
 
-	Tamanho do vetor: 500000
+	Tamanho do vetor: 0
 	Tipo 1: 
-	Caso 1 - 272632406 milisegundos 
-	Caso 2 - 272632483 milisegundos 
-	Caso 3 - 272632563 milisegundos 
-	Caso 4 - 272632643 milisegundos 
-	Caso 5 - 272632717 milisegundos 
-	Caso 6 - 272632795 milisegundos 
-	Caso 7 - 272632875 milisegundos 
-	Caso 8 - 272632952 milisegundos 
-	Caso 9 - 272633034 milisegundos 
-	Caso 10 - 272633112 milisegundos 
+	Caso 1 - 1730152358 milisegundos 
+	Caso 2 - 1730152359 milisegundos 
+	Caso 3 - 1730152361 milisegundos 
+	Caso 4 - 1730152363 milisegundos 
+	Caso 5 - 1730152363 milisegundos 
+	Caso 6 - 1730152364 milisegundos 
+	Caso 7 - 1730152365 milisegundos 
+	Caso 8 - 1730152366 milisegundos 
+	Caso 9 - 1730152367 milisegundos 
+	Caso 10 - 1730152367 milisegundos 
 
 	Tipo 2: 
-	Caso 1 - -2123148082 milisegundos 
-	Caso 2 - -2123152132 milisegundos 
-	Caso 3 - -2123102939 milisegundos 
-	Caso 4 - -2123106994 milisegundos 
-	Caso 5 - -2123119241 milisegundos 
-	Caso 6 - -2123119199 milisegundos 
-	Caso 7 - -2123143732 milisegundos 
-	Caso 8 - -2123127302 milisegundos 
-	Caso 9 - -2123114969 milisegundos 
-	Caso 10 - -2123106735 milisegundos 
+	Caso 1 - 1032121440 milisegundos 
+	Caso 2 - 1032121457 milisegundos 
+	Caso 3 - 1032121794 milisegundos 
+	Caso 4 - 1032121490 milisegundos 
+	Caso 5 - 1032121763 milisegundos 
+	Caso 6 - 1032121748 milisegundos 
+	Caso 7 - 1032121509 milisegundos 
+	Caso 8 - 1032121702 milisegundos 
+	Caso 9 - 1032121783 milisegundos 
+	Caso 10 - 1032121768 milisegundos 
 
-	Tamanho do vetor: 1000000
+	Tamanho do vetor: 0
 	Tipo 1: 
-	Caso 1 - 272633708 milisegundos 
-	Caso 2 - 272633859 milisegundos 
-	Caso 3 - 272634015 milisegundos 
-	Caso 4 - 272634174 milisegundos 
-	Caso 5 - 272634327 milisegundos 
-	Caso 6 - 272634477 milisegundos 
-	Caso 7 - 272634626 milisegundos 
-	Caso 8 - 272634785 milisegundos 
-	Caso 9 - 272634935 milisegundos 
-	Caso 10 - 272635089 milisegundos 
+	Caso 1 - 1730152380 milisegundos 
+	Caso 2 - 1730152380 milisegundos 
+	Caso 3 - 1730152381 milisegundos 
+	Caso 4 - 1730152381 milisegundos 
+	Caso 5 - 1730152382 milisegundos 
+	Caso 6 - 1730152383 milisegundos 
+	Caso 7 - 1730152384 milisegundos 
+	Caso 8 - 1730152385 milisegundos 
+	Caso 9 - 1730152386 milisegundos 
+	Caso 10 - 1730152386 milisegundos 
 
 	Tipo 2: 
-	Caso 1 - -2123121497 milisegundos 
-	Caso 2 - -2123109126 milisegundos 
-	Caso 3 - -2123158192 milisegundos 
-	Caso 4 - -2123129433 milisegundos 
-	Caso 5 - -2123125255 milisegundos 
-	Caso 6 - -2123157943 milisegundos 
-	Caso 7 - -2123108707 milisegundos 
-	Caso 8 - -2123133194 milisegundos 
-	Caso 9 - -2123108529 milisegundos 
-	Caso 10 - -2123124825 milisegundos 
+	Caso 1 - 1032121443 milisegundos 
+	Caso 2 - 1032121748 milisegundos 
+	Caso 3 - 1032121653 milisegundos 
+	Caso 4 - 1032121686 milisegundos 
+	Caso 5 - 1032121575 milisegundos 
+	Caso 6 - 1032121609 milisegundos 
+	Caso 7 - 1032121770 milisegundos 
+	Caso 8 - 1032121787 milisegundos 
+	Caso 9 - 1032121789 milisegundos 
+	Caso 10 - 1032121629 milisegundos 
 
-Tempo total Marge: 4073
+Tempo total Marge: 108
 Quick Sort:
-	Tamanho do vetor: 10000
+	Tamanho do vetor: 10
 	Tipo 1: 
-	Caso 1 - 4012 milisegundos 
-	Caso 2 - 16322 milisegundos 
-	Caso 3 - 29090 milisegundos 
-	Caso 4 - 41938 milisegundos 
-	Caso 5 - 53805 milisegundos 
-	Caso 6 - 65776 milisegundos 
-	Caso 7 - 80253 milisegundos 
-	Caso 8 - 93728 milisegundos 
-	Caso 9 - 107477 milisegu
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 1 milisegundos 
+	Caso 1 - 1 milisegundos 
+	Caso 1 - 1 milisegundos 
+	Caso 1 - 1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - -1 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - -1 milisegundos 
+	Caso 5 - -1 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - -1 milisegundos 
+	Caso 8 - -1 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - -1 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 2 - 0 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - -1 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - -1 milisegundos 
+	Caso 4 - -1 milisegundos 
+	Caso 4 - -1 milisegundos 
+	Caso 4 - -1 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - -1 milisegundos 
+	Caso 5 - -1 milisegundos 
+	Caso 5 - -1 milisegundos 
+	Caso 5 - -1 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - -1 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - -1 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - -1 milisegundos 
+	Caso 8 - -1 milisegundos 
+	Caso 8 - -1 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - -1 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - -1 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tamanho do vetor: 0
+	Tipo 1: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 8 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 8 milisegundos 
+	Caso 6 - 8 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+Tempo total Quick: 1141
+
+
+Tempo total: 1907

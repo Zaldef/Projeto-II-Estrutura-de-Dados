@@ -200,21 +200,23 @@ void marge_sort(Info *v, int tam, int pos, FILE *ARQ){
 
 int divisao(Info *v, int lim_i, int lim_s){
     int aux_key, aux_value, pivo, E = lim_i, D = lim_s;
-    pivo = v[E].key;
-    while(E>D){
-        while(v[E].key > pivo && E > lim_s) E++;
-        while(v[E].key <= pivo && D < lim_i) D--;
-        if(E>D){
+    pivo = v[lim_i].key;
+    while(E<D){
+        while(v[E].key >= pivo && E < lim_s) E++;
+        while(v[D].key < pivo && D > lim_i) D--; //CONFIRMAR >=
+        if(E<D){
             aux_key = v[E].key;
             aux_value = v[E].value;
-            v[E] = v[D];
+            v[E].key = v[D].key;
+            v[E].value = v[D].value;
             v[D].key = aux_key;
             v[D].value = aux_value;
         }
     }
     aux_key = v[lim_i].key;
     aux_value = v[lim_i].value;
-    v[lim_i] = v[D];
+    v[lim_i].key = v[D].key;
+    v[lim_i].value = v[D].value;
     v[D].key = aux_key;
     v[D].value = aux_value;
     return D;
@@ -222,14 +224,14 @@ int divisao(Info *v, int lim_i, int lim_s){
 
 void quick_sort(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
     clock_t start, end;
-    if(lim_i>lim_s){
+    if(lim_i<lim_s){
+        start = clock();
         int d;
         d = divisao(v,lim_i,lim_s);
         quick_sort(v,lim_i,d-1,pos,ARQ);
         quick_sort(v,d+1,lim_s,pos,ARQ);
+        end = clock();
     }
-
-    end = clock();
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
 }
 
@@ -237,7 +239,7 @@ void quick_sort(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
 
 int main(){
     clock_t start, end, start_master, end_master;
-    int tam[qntd_tams] = {10000, 50000, 100000, 500000, 1000000};
+    int tam[qntd_tams] = {1000, 10000, 100000, 1000000, 10000000};
     int seeds[qntd_seeds] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
     FILE *ARQ = fopen("Relatorio.txt", "w");
     start_master = clock();
@@ -383,15 +385,15 @@ start = clock();
         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
         for(int j = 0; j < qntd_seeds; j++){
             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-            quick_sort(vetor, 0, tam[i], j, ARQ);
+            quick_sort(vetor, 0, tam[i]-1, j, ARQ);
             free(vetor);
             printf("\n\t\tCaso %d - ok", j+1); //TESTE
         }
 
         fprintf(ARQ, "\n\n\tTipo 2: ");
         for(int j = 0; j < qntd_seeds; j++){
-            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);         
-            quick_sort(vetor, 0, tam[i], j, ARQ);
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            quick_sort(vetor, 0, tam[i]-1, j, ARQ);
             free(vetor);
             printf("\n\t\tCaso %d - ok", j+11); //TESTE
         }
