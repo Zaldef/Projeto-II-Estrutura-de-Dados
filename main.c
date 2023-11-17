@@ -10,7 +10,6 @@ typedef struct info{
     float value;
 }Info;
 
-
 Info* criar_vetor_tipo1(int tam, int seed){
     Info *vetor = (Info*) malloc(sizeof(Info)*tam);
     srand(seed);
@@ -75,6 +74,7 @@ void insertion_sort(Info *vetor, int tam, int i, FILE *ARQ){
         vetor[j+1] = aux;
     }
     end = clock();
+
     printf("\n\tCaso %d - %d milisegundos ", i+1, (end - start)); // TESTE
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", i+1, (end - start));
 }
@@ -144,6 +144,7 @@ void shell_sort(Info *vetor, int tam, int i, FILE *ARQ){
         }
     }
     end = clock();
+
     printf("\n\tCaso %d - %d milisegundos ", i+1, (end - start)); // TESTE
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", i+1, (end - start));
 }
@@ -191,9 +192,11 @@ void marge_sort(Info *v, int tam, int pos, FILE *ARQ){
     Info *c = (Info*) malloc(sizeof(Info)*tam);
     c->key = 0;
     c->value = 0;
+    start = clock();
     sort(v,c,0,tam-1);
-    free(c);
     end = clock();
+    free(c);
+    
 
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
 }
@@ -409,7 +412,6 @@ int main(){
     
     end_master = clock();
     fprintf(ARQ, "\n\nTempo total: %d", (end_master - start_master));
-    
 
     return 0;
 }
