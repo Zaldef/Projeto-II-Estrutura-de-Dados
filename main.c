@@ -45,7 +45,7 @@ void bubble_sort(Info *vetor, int tam, int i, FILE *ARQ) {
 
     start = clock();
     for (int i = 0; i < tam - 1; i++) {
-        for (int j = 1; j < tam - i ; j++) {
+        for (int j = 0; j < tam - i ; j++) {
             if (vetor[j].key < vetor[j + 1].key) {
                 int temp = vetor[j].key;
                 vetor[j].key = vetor[j + 1].key;
@@ -203,21 +203,23 @@ void marge_sort(Info *v, int tam, int pos, FILE *ARQ){
 
 int divisao(Info *v, int lim_i, int lim_s){
     int aux_key, aux_value, pivo, E = lim_i, D = lim_s;
-    pivo = v[E].key;
-    while(E>D){
-        while(v[E].key > pivo && E > lim_s) E++;
-        while(v[E].key <= pivo && D < lim_i) D--;
-        if(E>D){
+    pivo = v[lim_i].key;
+    while(E<D){
+        while(v[E].key >= pivo && E < lim_s) E++;
+        while(v[D].key < pivo && D > lim_i) D--; //CONFIRMAR >=
+        if(E<D){
             aux_key = v[E].key;
             aux_value = v[E].value;
-            v[E] = v[D];
+            v[E].key = v[D].key;
+            v[E].value = v[D].value;
             v[D].key = aux_key;
             v[D].value = aux_value;
         }
     }
     aux_key = v[lim_i].key;
     aux_value = v[lim_i].value;
-    v[lim_i] = v[D];
+    v[lim_i].key = v[D].key;
+    v[lim_i].value = v[D].value;
     v[D].key = aux_key;
     v[D].value = aux_value;
     return D;
@@ -225,186 +227,191 @@ int divisao(Info *v, int lim_i, int lim_s){
 
 void quick_sort(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
     clock_t start, end;
-    if(lim_i>lim_s){
+    if(lim_i<lim_s){
+        start = clock();
         int d;
         d = divisao(v,lim_i,lim_s);
         quick_sort(v,lim_i,d-1,pos,ARQ);
         quick_sort(v,d+1,lim_s,pos,ARQ);
+        end = clock();
     }
-
-    end = clock();
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
 }
 
 
 
 int main(){
+    //definindo variaveis de tempo
     clock_t start, end, start_master, end_master;
     int tam[qntd_tams] = {10000, 50000, 100000, 500000, 1000000};
     int seeds[qntd_seeds] = {66, 68, 22, 38, 49, 27, 41, 91, 95, 2};
+
+    //criando arquivo para guardar os tempos
     FILE *ARQ = fopen("Relatorio.txt", "w");
-    start_master = clock();
+
+    start_master = clock(); //iniciando contagem de tempo global do programa
+
+// Insertion Sort
+    start = clock(); //iniciando contagem de tempo do insertion sort
+    printf("\nInsertion Sort:"); //TESTE
+    fprintf(ARQ, "Insertion Sort:");
+    //loop para percorrer os tamanhos dos vetores
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        //loop para percorrer as seeds no tipo 1
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            bubble_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        //loop para percorrer as seeds no tipo 2
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            bubble_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        fprintf(ARQ, "\n");       
+    }
+    //finalizando contagem de tempo do insertion sort
+    end = clock();
+    fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
+
+// Bubble Sort
+    start = clock();
+    fprintf(ARQ, "Bubble Sort:");
+    printf("\nBubble Sort:"); //TESTE
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            insertion_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            insertion_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        fprintf(ARQ, "\n");
+    }
+    end = clock();
+    fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
+
+// Shell Sort
+    printf("\nShell Sort:"); //TESTE
+    fprintf(ARQ, "\n\nShell Sort:");
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            shell_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
 
 
-//     start = clock();
-//     printf("\nShell Sort:"); //TESTE
-//     fprintf(ARQ, "\n\nShell Sort:");
-//     for(int i = 0; i<qntd_tams; i++){
-//         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-//         fprintf(ARQ, "\n\tTipo 1: ");
-//         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-//         for(int j = 0; j < qntd_seeds; j++){
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+            shell_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+        }
+        fprintf(ARQ, "\n");
+    }
+    end = clock();
+    fprintf(ARQ, "\nTempo total Shell: %d\n", (end - start));
 
-//             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-//             shell_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//         }
+// Merge Sort    
+    start = clock();
+    fprintf(ARQ, "Merge Sort:");
+    printf("\nMerge Sort:"); //TESTE
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            marge_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+            printf("\n\t\tCaso %d - ok", j+1); //TESTE
+        }
 
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);         
+            marge_sort(vetor, tam[i], j, ARQ);
+            free(vetor);
+            printf("\n\t\tCaso %d - ok", j+11); //TESTE
+        }
+        fprintf(ARQ, "\n");
+    }
+    end = clock();
+    fprintf(ARQ, "\nTempo total Merge: %d\n", (end - start));
 
-//         fprintf(ARQ, "\n\n\tTipo 2: ");
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-//             shell_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//         }
-//         fprintf(ARQ, "\n");
-//     }
+// Quick Sort
+    start = clock();
+    fprintf(ARQ, "Quick Sort:");
+    printf("\nQuick Sort:"); //TESTE
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            quick_sort(vetor, 0, tam[i]-1, j, ARQ);
+            free(vetor);
+            printf("\n\t\tCaso %d - ok", j+1); //TESTE
+        }
 
-//     end = clock();
-//     fprintf(ARQ, "\nTempo total Shell: %d\n", (end - start));
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);         
+            quick_sort(vetor, 0, tam[i]-1, j, ARQ);
+            free(vetor);
+            printf("\n\t\tCaso %d - ok", j+11); //TESTE
+        }
+        fprintf(ARQ, "\n");
+    }
+    end = clock();
+    fprintf(ARQ, "\nTempo total Quick: %d\n", (end - start));
 
-//     start = clock();
+// Cocktail Sort
+    start = clock();
+    printf("\nCocktail Sort:"); //TESTE
+    fprintf(ARQ, "Cocktail Sort:");
+    for(int i = 0; i<qntd_tams; i++){
+        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+        fprintf(ARQ, "\n\tTipo 1: ");
+        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+            quick_sort(vetor, 0, tam[i], j, ARQ);
+            free(vetor);
+            printf("\n\t\tCaso %d - ok", j+1); //TESTE
+        }
 
-//     printf("\nInsertion Sort:"); //TESTE
-
-//     fprintf(ARQ, "Insertion Sort:");
-//     for(int i = 0; i<qntd_tams; i++){
-//         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-//         fprintf(ARQ, "\n\tTipo 1: ");
-//         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-//             bubble_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//         }
-
-//         fprintf(ARQ, "\n\n\tTipo 2: ");
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-//             bubble_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//         }
-//         fprintf(ARQ, "\n");       
-//     }
-//     end = clock();
-//     fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
-  
-// start = clock();
-//     printf("\nCocktail Sort:"); //TESTE
-
-//     fprintf(ARQ, "Cocktail Sort:");
-//     for(int i = 0; i<qntd_tams; i++){
-//         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-//         fprintf(ARQ, "\n\tTipo 1: ");
-//         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-//             insertion_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//             printf("\n\t\tCaso %d - ok", j+1); //TESTE
-//         }
-
-//         fprintf(ARQ, "\n\n\tTipo 2: ");
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-//             insertion_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//             printf("\n\t\tCaso %d - ok", j+11); //TESTE
-//         }
-//         fprintf(ARQ, "\n");       
-//     }
-//     end = clock();
-//     fprintf(ARQ, "\nTempo total Cocktail %d\n", (end - start));
+        fprintf(ARQ, "\n\n\tTipo 2: ");
+        for(int j = 0; j < qntd_seeds; j++){
+            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);         
+            quick_sort(vetor, 0, tam[i], j, ARQ);
+            free(vetor);
+            printf("\n\t\tCaso %d - ok", j+11); //TESTE
+        }
+        fprintf(ARQ, "\n");       
+    }
+    end = clock();
+    fprintf(ARQ, "\nTempo total Cocktail %d\n", (end - start));
     
-
-//     start = clock();
-//     fprintf(ARQ, "Bubble Sort:");
-//     printf("\nBubble Sort:"); //TESTE
-//     for(int i = 0; i<qntd_tams; i++){
-//         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-//         fprintf(ARQ, "\n\tTipo 1: ");
-//         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-//             insertion_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//         }
-
-//         fprintf(ARQ, "\n\n\tTipo 2: ");
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-//             insertion_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//         }
-//         fprintf(ARQ, "\n");
-//     }
-//     end = clock();
-//     fprintf(ARQ, "\nTempo total Insertion: %d\n", (end - start));
-
-//     start = clock();
-//     fprintf(ARQ, "Marge Sort:");
-//     printf("\nMarge Sort:"); //TESTE
-//     for(int i = 0; i<qntd_tams; i++){
-//         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-//         fprintf(ARQ, "\n\tTipo 1: ");
-//         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-//             marge_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//             printf("\n\t\tCaso %d - ok", j+1); //TESTE
-//         }
-
-//         fprintf(ARQ, "\n\n\tTipo 2: ");
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);         
-//             marge_sort(vetor, tam[i], j, ARQ);
-//             free(vetor);
-//             printf("\n\t\tCaso %d - ok", j+11); //TESTE
-//         }
-//         fprintf(ARQ, "\n");
-//     }
-//     end = clock();
-//     fprintf(ARQ, "\nTempo total Marge: %d\n", (end - start));
-
-//     start = clock();
-//     fprintf(ARQ, "Quick Sort:");
-//     printf("\nQuick Sort:"); //TESTE
-//     for(int i = 0; i<qntd_tams; i++){
-//         fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-//         fprintf(ARQ, "\n\tTipo 1: ");
-//         printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-//             quick_sort(vetor, 0, tam[i], j, ARQ);
-//             free(vetor);
-//             printf("\n\t\tCaso %d - ok", j+1); //TESTE
-//         }
-
-//         fprintf(ARQ, "\n\n\tTipo 2: ");
-//         for(int j = 0; j < qntd_seeds; j++){
-//             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);         
-//             quick_sort(vetor, 0, tam[i], j, ARQ);
-//             free(vetor);
-//             printf("\n\t\tCaso %d - ok", j+11); //TESTE
-//         }
-//         fprintf(ARQ, "\n");
-//     }
-//     end = clock();
-//     fprintf(ARQ, "\nTempo total Quick: %d\n", (end - start));
-
-//     end_master = clock();
-//     fprintf(ARQ, "\n\nTempo total: %d", (end_master - start_master));
+    end_master = clock();
+    fprintf(ARQ, "\n\nTempo total: %d", (end_master - start_master));
 
     return 0;
 }
