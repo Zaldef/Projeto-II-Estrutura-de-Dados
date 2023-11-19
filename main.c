@@ -242,22 +242,9 @@ void printar_vetor(Info *vetor, int tam){
 //         while(v[E].key >= v[pos_pivo].key && E < lim_s) E++;
 //         while(v[D].key < v[pos_pivo].key && D > lim_i) D--;
 //         if(E<D){
-//             if(v[E].key == v[pos_pivo].key){
-//                 pos_pivo = E;
-//             }else if(v[D].key == v[pos_pivo].key){
-//                 pos_pivo = D;
-//             }
 //             aux_key = v[E].key;
 //             aux_value = v[E].value;
-//             v[E].key = v[D].key;
-//             v[E].value = v[D].value;
-//             v[D].key = aux_key;
-//             v[D].value = aux_value;
-//         }
-//         else if(v[D].key >= v[pos_pivo].key){
-//             aux_key = v[pos_pivo].key;
-//             aux_value = v[pos_pivo].value;
-//             v[pos_pivo] = v[D];
+//             v[E] = v[D];
 //             v[D].key = aux_key;
 //             v[D].value = aux_value;
 //         }
@@ -290,9 +277,7 @@ int divisao_3(Info *v, int lim_i, int lim_s){
         while(v[E].key >= v[pos_pivo].key && E < lim_s) E++;
         while(v[D].key < v[pos_pivo].key && D > lim_i) D--; 
         if(E<D){
-            if(v[E].key == v[pos_pivo].key){
-                pos_pivo = E;
-            }else if(v[D].key == v[pos_pivo].key){
+            if(E == pos_pivo){
                 pos_pivo = D;
             }
             aux_key = v[E].key;
@@ -329,7 +314,6 @@ void quick_sort_3(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
     }
     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
 }
-
 
 
 int main(){
@@ -466,7 +450,7 @@ int main(){
     //         free(vetor);
     //         printf("\n\t\tCaso %d - ok", j+1); //TESTE
     //     }
-
+    //
     //     fprintf(ARQ, "\n\n\tTipo 2: ");
     //     for(int j = 0; j < qntd_seeds; j++){
     //         Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
@@ -536,7 +520,7 @@ int main(){
             free(vetor);
             printf("\n\t\tCaso %d - ok", j+1); //TESTE
         }
-
+    
         fprintf(ARQ, "\n\n\tTipo 2: ");
         for(int j = 0; j < qntd_seeds; j++){
             Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]); 

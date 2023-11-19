@@ -134,4 +134,4 @@ Quick Sort III:
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
 
-Tempo total Quick III: 318
+Tempo total Quick III: 350
