@@ -1,65 +1,7 @@
 Quick Sort III:
-	Tamanho do vetor: 33
+	Tamanho do vetor: 5
 	Tipo 1: 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
+	Caso 1 - -1 milisegundos 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
@@ -70,68 +12,12 @@ Quick Sort III:
 	Tipo 2: 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
-	Caso 1 - 0 milisegundos 
+	Caso 1 - -1 milisegundos 
+	Caso 1 - -1 milisegundos 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
 	Caso 1 - 0 milisegundos 
 
-Tempo total Quick III: 350
+Tempo total Quick III: 65
