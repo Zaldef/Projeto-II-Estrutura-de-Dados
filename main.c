@@ -198,57 +198,110 @@ void printar_vetor(Info *vetor, int tam){
 //     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
 // }
 
-int divisao(Info *v, int lim_i, int lim_s){
-    int aux_key, aux_value, pivo, E = lim_i, D = lim_s;
-    pivo = v[lim_i].key;
-    while(E<D){
-        while(v[E].key >= pivo && E < lim_s) E++;
-        while(v[D].key < pivo && D > lim_i) D--; //CONFIRMAR >=
-        if(E<D){
-            aux_key = v[E].key;
-            aux_value = v[E].value;
-            v[E].key = v[D].key;
-            v[E].value = v[D].value;
-            v[D].key = aux_key;
-            v[D].value = aux_value;
-        }
-    }
-    aux_key = v[lim_i].key;
-    aux_value = v[lim_i].value;
-    v[lim_i].key = v[D].key;
-    v[lim_i].value = v[D].value;
-    v[D].key = aux_key;
-    v[D].value = aux_value;
-    return D;
-}
+// int divisao(Info *v, int lim_i, int lim_s){
+//     int aux_key, aux_value, pivo, E = lim_i, D = lim_s;
+//     pivo = v[lim_i].key;
+//     while(E<D){
+//         while(v[E].key >= pivo && E < lim_s) E++;
+//         while(v[D].key < pivo && D > lim_i) D--; //CONFIRMAR >=
+//         if(E<D){
+//             aux_key = v[E].key;
+//             aux_value = v[E].value;
+//             v[E].key = v[D].key;
+//             v[E].value = v[D].value;
+//             v[D].key = aux_key;
+//             v[D].value = aux_value;
+//         }
+//     }
+//     aux_key = v[lim_i].key;
+//     aux_value = v[lim_i].value;
+//     v[lim_i].key = v[D].key;
+//     v[lim_i].value = v[D].value;
+//     v[D].key = aux_key;
+//     v[D].value = aux_value;
+//     return D;
+// }
 
-void quick_sort(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
-    clock_t start, end;
-    if(lim_i<lim_s){
-        start = clock();
-        int d;
-        d = divisao(v,lim_i,lim_s);
-        quick_sort(v,lim_i,d-1,pos,ARQ);
-        quick_sort(v,d+1,lim_s,pos,ARQ);
-        end = clock();
-    }
-    fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
-}
+// void quick_sort(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
+//     clock_t start, end;
+//     if(lim_i<lim_s){
+//         start = clock();
+//         int d;
+//         d = divisao(v,lim_i,lim_s);
+//         quick_sort(v,lim_i,d-1,pos,ARQ);
+//         quick_sort(v,d+1,lim_s,pos,ARQ);
+//         end = clock();
+//     }
+//     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
+// }
+
+// int divisao_2(Info *v, int lim_i, int lim_s){
+//     int aux_key, aux_value, pos_pivo, E = lim_i, D = lim_s;
+//     pos_pivo = (lim_i+lim_s)/2;
+//     while(E<D){
+//         while(v[E].key >= v[pos_pivo].key && E < lim_s) E++;
+//         while(v[D].key < v[pos_pivo].key && D > lim_i) D--;
+//         if(E<D){
+//             if(v[E].key == v[pos_pivo].key){
+//                 pos_pivo = E;
+//             }else if(v[D].key == v[pos_pivo].key){
+//                 pos_pivo = D;
+//             }
+//             aux_key = v[E].key;
+//             aux_value = v[E].value;
+//             v[E].key = v[D].key;
+//             v[E].value = v[D].value;
+//             v[D].key = aux_key;
+//             v[D].value = aux_value;
+//         }
+//         else if(v[D].key >= v[pos_pivo].key){
+//             aux_key = v[pos_pivo].key;
+//             aux_value = v[pos_pivo].value;
+//             v[pos_pivo] = v[D];
+//             v[D].key = aux_key;
+//             v[D].value = aux_value;
+//         }
+//     }
+//     aux_key = v[lim_i].key;
+//     aux_value = v[lim_i].value;
+//     v[lim_i] = v[D];
+//     v[D].key = aux_key;
+//     v[D].value = aux_value;
+//     return D;
+// }
+
+// void quick_sort_2(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
+//     clock_t start, end;
+//     if(lim_i<lim_s){
+//         start = clock();
+//         int d;
+//         d = divisao_2(v,lim_i,lim_s);
+//         quick_sort_2(v,lim_i,d-1,pos,ARQ);
+//         quick_sort_2(v,d+1,lim_s,pos,ARQ);
+//         end = clock();
+//     }
+//     fprintf(ARQ, "\n\tCaso %d - %d milisegundos ", pos+1, (end - start));
+// }
 
 int divisao_3(Info *v, int lim_i, int lim_s){
     int aux_key, aux_value, pivo, pos_pivo, E = lim_i, D = lim_s;
-    pivo = v[lim_s].key;
+    pos_pivo = lim_s;
     while(E<D){
-        while(v[E].key >= pivo && E < lim_s) E++;
-        while(v[D].key < pivo && D > lim_i) D--; 
+        while(v[E].key >= v[pos_pivo].key && E < lim_s) E++;
+        while(v[D].key < v[pos_pivo].key && D > lim_i) D--; 
         if(E<D){
+            if(v[E].key == v[pos_pivo].key){
+                pos_pivo = E;
+            }else if(v[D].key == v[pos_pivo].key){
+                pos_pivo = D;
+            }
             aux_key = v[E].key;
             aux_value = v[E].value;
             v[E] = v[D];
             v[D].key = aux_key;
             v[D].value = aux_value;
         }
-        else if(v[D].key > pivo){
+        else if(v[D].key >= v[pos_pivo].key){
             aux_key = v[lim_i].key;
             aux_value = v[lim_i].value;
             v[lim_i] = v[D];
@@ -256,6 +309,11 @@ int divisao_3(Info *v, int lim_i, int lim_s){
             v[D].value = aux_value;
         }
     }
+    aux_key = v[lim_i].key;
+    aux_value = v[lim_i].value;
+    v[lim_i] = v[D];
+    v[D].key = aux_key;
+    v[D].value = aux_value;
     return D;
 }
 
@@ -277,7 +335,7 @@ void quick_sort_3(Info *v, int lim_i, int lim_s, int pos, FILE *ARQ){
 int main(){
     //definindo variaveis de tempo
     clock_t start, end, start_master, end_master;
-    int tam[qntd_tams] = {10};
+    int tam[qntd_tams] = {33};
     int seeds[qntd_seeds] = {66};
 
     //criando arquivo para guardar os tempos
@@ -391,39 +449,74 @@ int main(){
 //     fprintf(ARQ, "\nTempo total Merge: %d\n", (end - start));
 
 // // Quick Sort I
-    start = clock();
-    fprintf(ARQ, "Quick Sort I:");
-    printf("\nQuick Sort I:"); //TESTE
-    for(int i = 0; i<qntd_tams; i++){
-        fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
-        fprintf(ARQ, "\n\tTipo 1: ");
-        printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
-        for(int j = 0; j < qntd_seeds; j++){
-            Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
-            printf("\nVetor antes:\n");
-            printar_vetor(vetor, tam[i]);
-            quick_sort(vetor, 0, tam[i]-1, j, ARQ);
-            printf("\nVetor depois:\n");
-            printar_vetor(vetor, tam[i]);
-            free(vetor);
-            printf("\n\t\tCaso %d - ok", j+1); //TESTE
-        }
+    // start = clock();
+    // fprintf(ARQ, "Quick Sort I:");
+    // printf("\nQuick Sort I:"); //TESTE
+    // for(int i = 0; i<qntd_tams; i++){
+    //     fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+    //     fprintf(ARQ, "\n\tTipo 1: ");
+    //     printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+    //     for(int j = 0; j < qntd_seeds; j++){
+    //         Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+    //         printf("\nVetor antes:\n");
+    //         printar_vetor(vetor, tam[i]);
+    //         quick_sort(vetor, 0, tam[i]-1, j, ARQ);
+    //         printf("\nVetor depois:\n");
+    //         printar_vetor(vetor, tam[i]);
+    //         free(vetor);
+    //         printf("\n\t\tCaso %d - ok", j+1); //TESTE
+    //     }
 
-        fprintf(ARQ, "\n\n\tTipo 2: ");
-        for(int j = 0; j < qntd_seeds; j++){
-            Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
-            printf("\nVetor antes:\n");
-            printar_vetor(vetor, tam[i]);         
-            quick_sort(vetor, 0, tam[i]-1, j, ARQ);
-            printf("\nVetor depois:\n");
-            printar_vetor(vetor, tam[i]);
-            free(vetor);
-            printf("\n\t\tCaso %d - ok", j+11); //TESTE
-        }
-        fprintf(ARQ, "\n");
-    }
-    end = clock();
-    fprintf(ARQ, "\nTempo total Quick I: %d\n", (end - start));
+    //     fprintf(ARQ, "\n\n\tTipo 2: ");
+    //     for(int j = 0; j < qntd_seeds; j++){
+    //         Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+    //         printf("\nVetor antes:\n");
+    //         printar_vetor(vetor, tam[i]);         
+    //         quick_sort(vetor, 0, tam[i]-1, j, ARQ);
+    //         printf("\nVetor depois:\n");
+    //         printar_vetor(vetor, tam[i]);
+    //         free(vetor);
+    //         printf("\n\t\tCaso %d - ok", j+11); //TESTE
+    //     }
+    //     fprintf(ARQ, "\n");
+    // }
+    // end = clock();
+    // fprintf(ARQ, "\nTempo total Quick I: %d\n", (end - start));
+
+    // // Quick Sort II
+    // start = clock();
+    // fprintf(ARQ, "Quick Sort II:");
+    // printf("\nQuick Sort II:"); //TESTE
+    // for(int i = 0; i<qntd_tams; i++){
+    //     fprintf(ARQ, "\n\tTamanho do vetor: %d", tam[i]);
+    //     fprintf(ARQ, "\n\tTipo 1: ");
+    //     printf("\n\tTamanho do vetor: %d", tam[i]); //TESTE
+    //     for(int j = 0; j < qntd_seeds; j++){
+    //         Info *vetor = criar_vetor_tipo1(tam[i], seeds[j]);
+    //         printf("\nVetor antes:\n");
+    //         printar_vetor(vetor, tam[i]);
+    //         quick_sort_2(vetor, 0, tam[i]-1, j, ARQ);
+    //         printf("\nVetor depois:\n");
+    //         printar_vetor(vetor, tam[i]);
+    //         free(vetor);
+    //         printf("\n\t\tCaso %d - ok", j+1); //TESTE
+    //     }
+
+    //     fprintf(ARQ, "\n\n\tTipo 2: ");
+    //     for(int j = 0; j < qntd_seeds; j++){
+    //         Info *vetor = criar_vetor_tipo2(tam[i], seeds[j]);
+    //         printf("\nVetor antes:\n");
+    //         printar_vetor(vetor, tam[i]);         
+    //         quick_sort_2(vetor, 0, tam[i]-1, j, ARQ);
+    //         printf("\nVetor depois:\n");
+    //         printar_vetor(vetor, tam[i]);
+    //         free(vetor);
+    //         printf("\n\t\tCaso %d - ok", j+11); //TESTE
+    //     }
+    //     fprintf(ARQ, "\n");
+    // }
+    // end = clock();
+    // fprintf(ARQ, "\nTempo total Quick II: %d\n", (end - start));
 
     // Quick Sort III
     start = clock();
