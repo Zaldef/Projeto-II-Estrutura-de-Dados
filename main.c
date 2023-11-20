@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <time.h>
 
-#define qntd_seeds 1
-#define qntd_tams 1
+#define qntd_seeds 10
+#define qntd_tams 5
 
 typedef struct info{
     long key;
     float value;
 }Info;
-
 
 Info* criar_vetor_tipo1(int tam, int seed){
     Info *vetor = (Info*) malloc(sizeof(Info)*tam);
