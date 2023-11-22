@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1700486456 source:c:\eu\projeto-ii-estrutura-de-dados\main.c
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+

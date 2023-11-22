@@ -1,0 +1,31 @@
+Insertion Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+		Caso 1 - 137 milisegundos 
+		Caso 2 - 137 milisegundos 
+		Caso 3 - 138 milisegundos 
+		Caso 4 - 138 milisegundos 
+		Caso 5 - 135 milisegundos 
+		Caso 6 - 137 milisegundos 
+		Caso 7 - 140 milisegundos 
+		Caso 8 - 136 milisegundos 
+		Caso 9 - 140 milisegundos 
+		Caso 10 - 137 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 272 milisegundos 
+		Caso 2 - 271 milisegundos 
+		Caso 3 - 275 milisegundos 
+		Caso 4 - 273 milisegundos 
+		Caso 5 - 273 milisegundos 
+		Caso 6 - 274 milisegundos 
+		Caso 7 - 273 milisegundos 
+		Caso 8 - 280 milisegundos 
+		Caso 9 - 273 milisegundos 
+		Caso 10 - 275 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+		Caso 1 - 3395 milisegundos 
+		Caso 2 - 3324 milisegundos 
+		Caso 3 - 3411 milisegundos 
