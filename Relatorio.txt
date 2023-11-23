@@ -1,0 +1,752 @@
+
+Bubble Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+	Caso 1 - 235 milisegundos 
+	Caso 2 - 234 milisegundos 
+	Caso 3 - 238 milisegundos 
+	Caso 4 - 241 milisegundos 
+	Caso 5 - 233 milisegundos 
+	Caso 6 - 237 milisegundos 
+	Caso 7 - 229 milisegundos 
+	Caso 8 - 228 milisegundos 
+	Caso 9 - 236 milisegundos 
+	Caso 10 - 236 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 224 milisegundos 
+	Caso 2 - 233 milisegundos 
+	Caso 3 - 234 milisegundos 
+	Caso 4 - 234 milisegundos 
+	Caso 5 - 235 milisegundos 
+	Caso 6 - 230 milisegundos 
+	Caso 7 - 229 milisegundos 
+	Caso 8 - 230 milisegundos 
+	Caso 9 - 220 milisegundos 
+	Caso 10 - 222 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+	Caso 1 - 6767 milisegundos 
+	Caso 2 - 6821 milisegundos 
+	Caso 3 - 6949 milisegundos 
+	Caso 4 - 6834 milisegundos 
+	Caso 5 - 6836 milisegundos 
+	Caso 6 - 6962 milisegundos 
+	Caso 7 - 6866 milisegundos 
+	Caso 8 - 6902 milisegundos 
+	Caso 9 - 6820 milisegundos 
+	Caso 10 - 6849 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 5834 milisegundos 
+	Caso 2 - 5783 milisegundos 
+	Caso 3 - 5696 milisegundos 
+	Caso 4 - 5651 milisegundos 
+	Caso 5 - 5687 milisegundos 
+	Caso 6 - 5696 milisegundos 
+	Caso 7 - 5760 milisegundos 
+	Caso 8 - 5724 milisegundos 
+	Caso 9 - 5900 milisegundos 
+	Caso 10 - 5919 milisegundos 
+
+	Tamanho do vetor: 100000
+	Tipo 1: 
+	Caso 1 - 28673 milisegundos 
+	Caso 2 - 36014 milisegundos 
+	Caso 3 - 29068 milisegundos 
+	Caso 4 - 29038 milisegundos 
+	Caso 5 - 29021 milisegundos 
+	Caso 6 - 38634 milisegundos 
+	Caso 7 - 29104 milisegundos 
+	Caso 8 - 28958 milisegundos 
+	Caso 9 - 30547 milisegundos 
+	Caso 10 - 30915 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 40309 milisegundos 
+	Caso 2 - 37873 milisegundos 
+	Caso 3 - 42598 milisegundos 
+	Caso 4 - 23802 milisegundos 
+	Caso 5 - 23947 milisegundos 
+	Caso 6 - 40872 milisegundos 
+	Caso 7 - 42737 milisegundos 
+	Caso 8 - 42520 milisegundos 
+	Caso 9 - 42617 milisegundos 
+	Caso 10 - 38622 milisegundos 
+
+	Tamanho do vetor: 500000
+	Tipo 1: 
+	Caso 1 - 1008348 milisegundos 
+	Caso 2 - 987870 milisegundos 
+	Caso 3 - 941870 milisegundos 
+	Caso 4 - 978891 milisegundos 
+	Caso 5 - 965988 milisegundos 
+	Caso 6 - 965498 milisegundos 
+	Caso 7 - 957430 milisegundos 
+	Caso 8 - 967871 milisegundos 
+	Caso 9 - 972383 milisegundos 
+	Caso 10 - 942715 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 1040710 milisegundos 
+	Caso 2 - 849939 milisegundos 
+	Caso 3 - 919807 milisegundos 
+	Caso 4 - 1042403 milisegundos 
+	Caso 5 - 1047919 milisegundos 
+	Caso 6 - 1028127 milisegundos 
+	Caso 7 - 1028712 milisegundos 
+	Caso 8 - 778392 milisegundos 
+	Caso 9 - 1026089 milisegundos 
+	Caso 10 - 962412 milisegundos 
+
+	Tamanho do vetor: 1000000
+	Tipo 1: 
+	Caso 1 - 3973337 milisegundos 
+	Caso 2 - 3988153 milisegundos 
+	Caso 3 - 3996394 milisegundos 
+	Caso 4 - 3867464 milisegundos 
+	Caso 5 - 3857913 milisegundos 
+	Caso 6 - 3885199 milisegundos 
+	Caso 7 - 3890117 milisegundos 
+	Caso 8 - 3983788 milisegundos 
+	Caso 9 - 3960424 milisegundos 
+	Caso 10 - 4012108 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 3941321 milisegundos 
+	Caso 2 - 3910509 milisegundos 
+	Caso 3 - 4155323 milisegundos 
+	Caso 4 - 4212961 milisegundos 
+	Caso 5 - 4038943 milisegundos 
+	Caso 6 - 3561332 milisegundos 
+	Caso 7 - 4182406 milisegundos 
+	Caso 8 - 3958484 milisegundos 
+	Caso 9 - 3892188 milisegundos 
+	Caso 10 - 4044816 milisegundos 
+
+Shell Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+	Caso 1 - 2 milisegundos 
+	Caso 2 - 2 milisegundos 
+	Caso 3 - 1 milisegundos 
+	Caso 4 - 1 milisegundos 
+	Caso 5 - 1 milisegundos 
+	Caso 6 - 1 milisegundos 
+	Caso 7 - 1 milisegundos 
+	Caso 8 - 1 milisegundos 
+	Caso 9 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 0 milisegundos 
+	Caso 2 - 1 milisegundos 
+	Caso 3 - 0 milisegundos 
+	Caso 4 - 0 milisegundos 
+	Caso 5 - 0 milisegundos 
+	Caso 6 - 0 milisegundos 
+	Caso 7 - 0 milisegundos 
+	Caso 8 - 0 milisegundos 
+	Caso 9 - 0 milisegundos 
+	Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+	Caso 1 - 10 milisegundos 
+	Caso 2 - 12 milisegundos 
+	Caso 3 - 10 milisegundos 
+	Caso 4 - 10 milisegundos 
+	Caso 5 - 10 milisegundos 
+	Caso 6 - 10 milisegundos 
+	Caso 7 - 9 milisegundos 
+	Caso 8 - 10 milisegundos 
+	Caso 9 - 10 milisegundos 
+	Caso 10 - 10 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 3 milisegundos 
+	Caso 2 - 3 milisegundos 
+	Caso 3 - 3 milisegundos 
+	Caso 4 - 3 milisegundos 
+	Caso 5 - 2 milisegundos 
+	Caso 6 - 3 milisegundos 
+	Caso 7 - 3 milisegundos 
+	Caso 8 - 2 milisegundos 
+	Caso 9 - 3 milisegundos 
+	Caso 10 - 3 milisegundos 
+
+	Tamanho do vetor: 100000
+	Tipo 1: 
+	Caso 1 - 21 milisegundos 
+	Caso 2 - 31 milisegundos 
+	Caso 3 - 32 milisegundos 
+	Caso 4 - 26 milisegundos 
+	Caso 5 - 31 milisegundos 
+	Caso 6 - 30 milisegundos 
+	Caso 7 - 32 milisegundos 
+	Caso 8 - 23 milisegundos 
+	Caso 9 - 30 milisegundos 
+	Caso 10 - 28 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 7 milisegundos 
+	Caso 2 - 6 milisegundos 
+	Caso 3 - 6 milisegundos 
+	Caso 4 - 9 milisegundos 
+	Caso 5 - 10 milisegundos 
+	Caso 6 - 9 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 10 milisegundos 
+	Caso 9 - 8 milisegundos 
+	Caso 10 - 6 milisegundos 
+
+	Tamanho do vetor: 500000
+	Tipo 1: 
+	Caso 1 - 188 milisegundos 
+	Caso 2 - 199 milisegundos 
+	Caso 3 - 184 milisegundos 
+	Caso 4 - 172 milisegundos 
+	Caso 5 - 204 milisegundos 
+	Caso 6 - 198 milisegundos 
+	Caso 7 - 192 milisegundos 
+	Caso 8 - 181 milisegundos 
+	Caso 9 - 175 milisegundos 
+	Caso 10 - 181 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 50 milisegundos 
+	Caso 2 - 61 milisegundos 
+	Caso 3 - 60 milisegundos 
+	Caso 4 - 57 milisegundos 
+	Caso 5 - 53 milisegundos 
+	Caso 6 - 52 milisegundos 
+	Caso 7 - 55 milisegundos 
+	Caso 8 - 49 milisegundos 
+	Caso 9 - 43 milisegundos 
+	Caso 10 - 64 milisegundos 
+
+	Tamanho do vetor: 1000000
+	Tipo 1: 
+	Caso 1 - 426 milisegundos 
+	Caso 2 - 439 milisegundos 
+	Caso 3 - 424 milisegundos 
+	Caso 4 - 396 milisegundos 
+	Caso 5 - 415 milisegundos 
+	Caso 6 - 409 milisegundos 
+	Caso 7 - 457 milisegundos 
+	Caso 8 - 462 milisegundos 
+	Caso 9 - 411 milisegundos 
+	Caso 10 - 409 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 113 milisegundos 
+	Caso 2 - 110 milisegundos 
+	Caso 3 - 110 milisegundos 
+	Caso 4 - 121 milisegundos 
+	Caso 5 - 113 milisegundos 
+	Caso 6 - 111 milisegundos 
+	Caso 7 - 118 milisegundos 
+	Caso 8 - 111 milisegundos 
+	Caso 9 - 114 milisegundos 
+	Caso 10 - 115 milisegundos 
+
+Merge Sort:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+	Caso 1 - 1 milisegundos 
+	Caso 2 - 2 milisegundos 
+	Caso 3 - 2 milisegundos 
+	Caso 4 - 1 milisegundos 
+	Caso 5 - 1 milisegundos 
+	Caso 6 - 1 milisegundos 
+	Caso 7 - 2 milisegundos 
+	Caso 8 - 2 milisegundos 
+	Caso 9 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 1 milisegundos 
+	Caso 2 - 1 milisegundos 
+	Caso 3 - 1 milisegundos 
+	Caso 4 - 1 milisegundos 
+	Caso 5 - 1 milisegundos 
+	Caso 6 - 2 milisegundos 
+	Caso 7 - 1 milisegundos 
+	Caso 8 - 1 milisegundos 
+	Caso 9 - 1 milisegundos 
+	Caso 10 - 1 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+	Caso 1 - 9 milisegundos 
+	Caso 2 - 8 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 8 milisegundos 
+	Caso 5 - 9 milisegundos 
+	Caso 6 - 9 milisegundos 
+	Caso 7 - 8 milisegundos 
+	Caso 8 - 8 milisegundos 
+	Caso 9 - 9 milisegundos 
+	Caso 10 - 8 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 5 milisegundos 
+	Caso 2 - 5 milisegundos 
+	Caso 3 - 8 milisegundos 
+	Caso 4 - 5 milisegundos 
+	Caso 5 - 5 milisegundos 
+	Caso 6 - 6 milisegundos 
+	Caso 7 - 5 milisegundos 
+	Caso 8 - 5 milisegundos 
+	Caso 9 - 5 milisegundos 
+	Caso 10 - 7 milisegundos 
+
+	Tamanho do vetor: 100000
+	Tipo 1: 
+	Caso 1 - 21 milisegundos 
+	Caso 2 - 19 milisegundos 
+	Caso 3 - 23 milisegundos 
+	Caso 4 - 20 milisegundos 
+	Caso 5 - 21 milisegundos 
+	Caso 6 - 22 milisegundos 
+	Caso 7 - 19 milisegundos 
+	Caso 8 - 23 milisegundos 
+	Caso 9 - 21 milisegundos 
+	Caso 10 - 21 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 14 milisegundos 
+	Caso 2 - 14 milisegundos 
+	Caso 3 - 15 milisegundos 
+	Caso 4 - 13 milisegundos 
+	Caso 5 - 11 milisegundos 
+	Caso 6 - 14 milisegundos 
+	Caso 7 - 12 milisegundos 
+	Caso 8 - 10 milisegundos 
+	Caso 9 - 12 milisegundos 
+	Caso 10 - 11 milisegundos 
+
+	Tamanho do vetor: 500000
+	Tipo 1: 
+	Caso 1 - 102 milisegundos 
+	Caso 2 - 116 milisegundos 
+	Caso 3 - 110 milisegundos 
+	Caso 4 - 114 milisegundos 
+	Caso 5 - 109 milisegundos 
+	Caso 6 - 109 milisegundos 
+	Caso 7 - 104 milisegundos 
+	Caso 8 - 99 milisegundos 
+	Caso 9 - 101 milisegundos 
+	Caso 10 - 107 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 74 milisegundos 
+	Caso 2 - 64 milisegundos 
+	Caso 3 - 73 milisegundos 
+	Caso 4 - 77 milisegundos 
+	Caso 5 - 65 milisegundos 
+	Caso 6 - 73 milisegundos 
+	Caso 7 - 80 milisegundos 
+	Caso 8 - 74 milisegundos 
+	Caso 9 - 60 milisegundos 
+	Caso 10 - 61 milisegundos 
+
+	Tamanho do vetor: 1000000
+	Tipo 1: 
+	Caso 1 - 213 milisegundos 
+	Caso 2 - 213 milisegundos 
+	Caso 3 - 219 milisegundos 
+	Caso 4 - 227 milisegundos 
+	Caso 5 - 218 milisegundos 
+	Caso 6 - 221 milisegundos 
+	Caso 7 - 220 milisegundos 
+	Caso 8 - 226 milisegundos 
+	Caso 9 - 214 milisegundos 
+	Caso 10 - 209 milisegundos 
+
+	Tipo 2: 
+	Caso 1 - 149 milisegundos 
+	Caso 2 - 149 milisegundos 
+	Caso 3 - 141 milisegundos 
+	Caso 4 - 158 milisegundos 
+	Caso 5 - 136 milisegundos 
+	Caso 6 - 136 milisegundos 
+	Caso 7 - 137 milisegundos 
+	Caso 8 - 140 milisegundos 
+	Caso 9 - 147 milisegundos 
+	Caso 10 - 142 milisegundos 
+Quick Sort I-LI:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+		Caso 1 - 2 milisegundos 
+		Caso 2 - 1 milisegundos 
+		Caso 3 - 1 milisegundos 
+		Caso 4 - 1 milisegundos 
+		Caso 5 - 2 milisegundos 
+		Caso 6 - 1 milisegundos 
+		Caso 7 - 1 milisegundos 
+		Caso 8 - 1 milisegundos 
+		Caso 9 - 1 milisegundos 
+		Caso 10 - 1 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 109 milisegundos 
+		Caso 2 - 104 milisegundos 
+		Caso 3 - 103 milisegundos 
+		Caso 4 - 108 milisegundos 
+		Caso 5 - 105 milisegundos 
+		Caso 6 - 106 milisegundos 
+		Caso 7 - 101 milisegundos 
+		Caso 8 - 107 milisegundos 
+		Caso 9 - 101 milisegundos 
+		Caso 10 - 101 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+		Caso 1 - 10 milisegundos 
+		Caso 2 - 7 milisegundos 
+		Caso 3 - 7 milisegundos 
+		Caso 4 - 7 milisegundos 
+		Caso 5 - 8 milisegundos 
+		Caso 6 - 7 milisegundos 
+		Caso 7 - 8 milisegundos 
+		Caso 8 - 7 milisegundos 
+		Caso 9 - 7 milisegundos 
+		Caso 10 - 7 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 2575 milisegundos 
+		Caso 2 - 2559 milisegundos 
+		Caso 3 - 2597 milisegundos 
+		Caso 4 - 2631 milisegundos 
+		Caso 5 - 2605 milisegundos 
+		Caso 6 - 2591 milisegundos 
+		Caso 7 - 2617 milisegundos 
+		Caso 8 - 2564 milisegundos 
+		Caso 9 - 2586 milisegundos 
+		Caso 10 - 2571 milisegundos 
+
+	Tamanho do vetor: 100000
+	Tipo 1: 
+		Caso 1 - 22 milisegundos 
+		Caso 2 - 16 milisegundos 
+		Caso 3 - 11 milisegundos 
+		Caso 4 - 16 milisegundos 
+		Caso 5 - 16 milisegundos 
+		Caso 6 - 16 milisegundos 
+		Caso 7 - 16 milisegundos 
+		Caso 8 - 15 milisegundos 
+		Caso 9 - 15 milisegundos 
+		Caso 10 - 15 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 10271 milisegundos 
+		Caso 2 - 10260 milisegundos 
+		Caso 3 - 10426 milisegundos 
+		Caso 4 - 10358 milisegundos 
+		Caso 5 - 10417 milisegundos 
+		Caso 6 - 10404 milisegundos 
+		Caso 7 - 10390 milisegundos 
+		Caso 8 - 10346 milisegundos 
+		Caso 9 - 10444 milisegundos 
+		Caso 10 - 10340 milisegundos 
+
+	Tamanho do vetor: 500000
+	Tipo 1: 
+		Caso 1 - 82 milisegundos 
+		Caso 2 - 83 milisegundos 
+		Caso 3 - 86 milisegundos 
+		Caso 4 - 91 milisegundos 
+		Caso 5 - 88 milisegundos 
+		Caso 6 - 87 milisegundos 
+		Caso 7 - 85 milisegundos 
+		Caso 8 - 87 milisegundos 
+		Caso 9 - 86 milisegundos 
+		Caso 10 - 87 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 259100 milisegundos 
+		Caso 2 - 257966 milisegundos 
+		Caso 3 - 258274 milisegundos 
+		Caso 4 - 258096 milisegundos 
+		Caso 5 - 258041 milisegundos 
+		Caso 6 - 258176 milisegundos 
+		Caso 7 - 257564 milisegundos 
+		Caso 8 - 258059 milisegundos 
+		Caso 9 - 257532 milisegundos 
+		Caso 10 - 256914 milisegundos 
+
+	Tamanho do vetor: 1000000
+	Tipo 1: 
+		Caso 1 - 224 milisegundos 
+		Caso 2 - 193 milisegundos 
+		Caso 3 - 194 milisegundos 
+		Caso 4 - 191 milisegundos 
+		Caso 5 - 196 milisegundos 
+		Caso 6 - 195 milisegundos 
+		Caso 7 - 196 milisegundos 
+		Caso 8 - 191 milisegundos 
+		Caso 9 - 193 milisegundos 
+		Caso 10 - 195 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 1031663 milisegundos 
+		Caso 2 - 1033430 milisegundos 
+		Caso 3 - 1031053 milisegundos 
+		Caso 4 - 1031847 milisegundos 
+		Caso 5 - 1031647 milisegundos 
+		Caso 6 - 1032671 milisegundos 
+		Caso 7 - 1032581 milisegundos 
+		Caso 8 - 1033806 milisegundos 
+		Caso 9 - 1037692 milisegundos 
+		Caso 10 - 1031837 milisegundos 
+Quick Sort II-LM:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+		Caso 1 - 2 milisegundos 
+		Caso 2 - 2 milisegundos 
+		Caso 3 - 2 milisegundos 
+		Caso 4 - 1 milisegundos 
+		Caso 5 - 2 milisegundos 
+		Caso 6 - 2 milisegundos 
+		Caso 7 - 1 milisegundos 
+		Caso 8 - 1 milisegundos 
+		Caso 9 - 2 milisegundos 
+		Caso 10 - 2 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 1 milisegundos 
+		Caso 2 - 1 milisegundos 
+		Caso 3 - 0 milisegundos 
+		Caso 4 - 0 milisegundos 
+		Caso 5 - 0 milisegundos 
+		Caso 6 - 1 milisegundos 
+		Caso 7 - 1 milisegundos 
+		Caso 8 - 0 milisegundos 
+		Caso 9 - 0 milisegundos 
+		Caso 10 - 0 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+		Caso 1 - 7 milisegundos 
+		Caso 2 - 7 milisegundos 
+		Caso 3 - 7 milisegundos 
+		Caso 4 - 7 milisegundos 
+		Caso 5 - 8 milisegundos 
+		Caso 6 - 7 milisegundos 
+		Caso 7 - 7 milisegundos 
+		Caso 8 - 9 milisegundos 
+		Caso 9 - 8 milisegundos 
+		Caso 10 - 8 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 3 milisegundos 
+		Caso 2 - 3 milisegundos 
+		Caso 3 - 3 milisegundos 
+		Caso 4 - 3 milisegundos 
+		Caso 5 - 2 milisegundos 
+		Caso 6 - 3 milisegundos 
+		Caso 7 - 3 milisegundos 
+		Caso 8 - 3 milisegundos 
+		Caso 9 - 2 milisegundos 
+		Caso 10 - 3 milisegundos 
+
+	Tamanho do vetor: 100000
+	Tipo 1: 
+		Caso 1 - 16 milisegundos 
+		Caso 2 - 16 milisegundos 
+		Caso 3 - 15 milisegundos 
+		Caso 4 - 18 milisegundos 
+		Caso 5 - 15 milisegundos 
+		Caso 6 - 15 milisegundos 
+		Caso 7 - 16 milisegundos 
+		Caso 8 - 16 milisegundos 
+		Caso 9 - 16 milisegundos 
+		Caso 10 - 16 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 6 milisegundos 
+		Caso 2 - 7 milisegundos 
+		Caso 3 - 6 milisegundos 
+		Caso 4 - 14 milisegundos 
+		Caso 5 - 6 milisegundos 
+		Caso 6 - 6 milisegundos 
+		Caso 7 - 5 milisegundos 
+		Caso 8 - 6 milisegundos 
+		Caso 9 - 6 milisegundos 
+		Caso 10 - 5 milisegundos 
+
+	Tamanho do vetor: 500000
+	Tipo 1: 
+		Caso 1 - 81 milisegundos 
+		Caso 2 - 88 milisegundos 
+		Caso 3 - 83 milisegundos 
+		Caso 4 - 86 milisegundos 
+		Caso 5 - 87 milisegundos 
+		Caso 6 - 81 milisegundos 
+		Caso 7 - 81 milisegundos 
+		Caso 8 - 89 milisegundos 
+		Caso 9 - 86 milisegundos 
+		Caso 10 - 82 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 33 milisegundos 
+		Caso 2 - 33 milisegundos 
+		Caso 3 - 32 milisegundos 
+		Caso 4 - 33 milisegundos 
+		Caso 5 - 32 milisegundos 
+		Caso 6 - 32 milisegundos 
+		Caso 7 - 33 milisegundos 
+		Caso 8 - 32 milisegundos 
+		Caso 9 - 32 milisegundos 
+		Caso 10 - 32 milisegundos 
+
+	Tamanho do vetor: 1000000
+	Tipo 1: 
+		Caso 1 - 175 milisegundos 
+		Caso 2 - 169 milisegundos 
+		Caso 3 - 169 milisegundos 
+		Caso 4 - 169 milisegundos 
+		Caso 5 - 171 milisegundos 
+		Caso 6 - 172 milisegundos 
+		Caso 7 - 177 milisegundos 
+		Caso 8 - 169 milisegundos 
+		Caso 9 - 171 milisegundos 
+		Caso 10 - 172 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 67 milisegundos 
+		Caso 2 - 66 milisegundos 
+		Caso 3 - 67 milisegundos 
+		Caso 4 - 66 milisegundos 
+		Caso 5 - 67 milisegundos 
+		Caso 6 - 68 milisegundos 
+		Caso 7 - 69 milisegundos 
+		Caso 8 - 66 milisegundos 
+		Caso 9 - 71 milisegundos 
+		Caso 10 - 67 milisegundos 
+Quick Sort III-LS:
+	Tamanho do vetor: 10000
+	Tipo 1: 
+		Caso 1 - 2 milisegundos 
+		Caso 2 - 2 milisegundos 
+		Caso 3 - 1 milisegundos 
+		Caso 4 - 1 milisegundos 
+		Caso 5 - 1 milisegundos 
+		Caso 6 - 1 milisegundos 
+		Caso 7 - 2 milisegundos 
+		Caso 8 - 1 milisegundos 
+		Caso 9 - 1 milisegundos 
+		Caso 10 - 2 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 105 milisegundos 
+		Caso 2 - 117 milisegundos 
+		Caso 3 - 102 milisegundos 
+		Caso 4 - 104 milisegundos 
+		Caso 5 - 106 milisegundos 
+		Caso 6 - 102 milisegundos 
+		Caso 7 - 102 milisegundos 
+		Caso 8 - 103 milisegundos 
+		Caso 9 - 103 milisegundos 
+		Caso 10 - 109 milisegundos 
+
+	Tamanho do vetor: 50000
+	Tipo 1: 
+		Caso 1 - 9 milisegundos 
+		Caso 2 - 8 milisegundos 
+		Caso 3 - 8 milisegundos 
+		Caso 4 - 7 milisegundos 
+		Caso 5 - 7 milisegundos 
+		Caso 6 - 7 milisegundos 
+		Caso 7 - 7 milisegundos 
+		Caso 8 - 7 milisegundos 
+		Caso 9 - 7 milisegundos 
+		Caso 10 - 9 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 2560 milisegundos 
+		Caso 2 - 2582 milisegundos 
+		Caso 3 - 2633 milisegundos 
+		Caso 4 - 2583 milisegundos 
+		Caso 5 - 2594 milisegundos 
+		Caso 6 - 2585 milisegundos 
+		Caso 7 - 2607 milisegundos 
+		Caso 8 - 2632 milisegundos 
+		Caso 9 - 2582 milisegundos 
+		Caso 10 - 2562 milisegundos 
+
+	Tamanho do vetor: 100000
+	Tipo 1: 
+		Caso 1 - 18 milisegundos 
+		Caso 2 - 15 milisegundos 
+		Caso 3 - 15 milisegundos 
+		Caso 4 - 17 milisegundos 
+		Caso 5 - 14 milisegundos 
+		Caso 6 - 25 milisegundos 
+		Caso 7 - 15 milisegundos 
+		Caso 8 - 18 milisegundos 
+		Caso 9 - 15 milisegundos 
+		Caso 10 - 19 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 10294 milisegundos 
+		Caso 2 - 10255 milisegundos 
+		Caso 3 - 10253 milisegundos 
+		Caso 4 - 10339 milisegundos 
+		Caso 5 - 10377 milisegundos 
+		Caso 6 - 10323 milisegundos 
+		Caso 7 - 10298 milisegundos 
+		Caso 8 - 10302 milisegundos 
+		Caso 9 - 10288 milisegundos 
+		Caso 10 - 10297 milisegundos 
+
+	Tamanho do vetor: 500000
+	Tipo 1: 
+		Caso 1 - 114 milisegundos 
+		Caso 2 - 81 milisegundos 
+		Caso 3 - 83 milisegundos 
+		Caso 4 - 83 milisegundos 
+		Caso 5 - 103 milisegundos 
+		Caso 6 - 85 milisegundos 
+		Caso 7 - 83 milisegundos 
+		Caso 8 - 86 milisegundos 
+		Caso 9 - 86 milisegundos 
+		Caso 10 - 99 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 257962 milisegundos 
+		Caso 2 - 257012 milisegundos 
+		Caso 3 - 257932 milisegundos 
+		Caso 4 - 257454 milisegundos 
+		Caso 5 - 257752 milisegundos 
+		Caso 6 - 257062 milisegundos 
+		Caso 7 - 257801 milisegundos 
+		Caso 8 - 257079 milisegundos 
+		Caso 9 - 257021 milisegundos 
+		Caso 10 - 257219 milisegundos 
+
+	Tamanho do vetor: 1000000
+	Tipo 1: 
+		Caso 1 - 195 milisegundos 
+		Caso 2 - 195 milisegundos 
+		Caso 3 - 185 milisegundos 
+		Caso 4 - 200 milisegundos 
+		Caso 5 - 192 milisegundos 
+		Caso 6 - 189 milisegundos 
+		Caso 7 - 195 milisegundos 
+		Caso 8 - 192 milisegundos 
+		Caso 9 - 198 milisegundos 
+		Caso 10 - 202 milisegundos 
+
+	Tipo 2: 
+		Caso 1 - 1032710 milisegundos 
+		Caso 2 - 1032882 milisegundos 
+		Caso 3 - 1031969 milisegundos 
+		Caso 4 - 1031263 milisegundos 
+		Caso 5 - 1031831 milisegundos 
+		Caso 6 - 1027932 milisegundos 
+		Caso 7 - 1027119 milisegundos 
+		Caso 8 - 1029941 milisegundos 
+		Caso 9 - 1027859 milisegundos 
